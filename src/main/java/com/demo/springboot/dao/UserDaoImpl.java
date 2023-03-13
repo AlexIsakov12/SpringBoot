@@ -1,7 +1,7 @@
-package dao;
+package com.demo.springboot.dao;
 
 import org.springframework.stereotype.Repository;
-import model.User;
+import com.demo.springboot.model.User;
 
 import javax.persistence.*;
 import javax.transaction.Transactional;

@@ -1,8 +1,8 @@
-package service;
+package com.demo.springboot.service;
 
 import org.springframework.stereotype.Service;
-import dao.UserDao;
-import model.User;
+import com.demo.springboot.dao.UserDao;
+import com.demo.springboot.model.User;
 
 import java.util.List;
 @Service

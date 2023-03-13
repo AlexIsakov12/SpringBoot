@@ -1,10 +1,10 @@
-package controller;
+package com.demo.springboot.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import model.User;
-import service.UserService;
+import com.demo.springboot.model.User;
+import com.demo.springboot.service.UserService;
 
 @Controller
 @RequestMapping("/users")
@@ -39,7 +39,7 @@ public class UserController {
         return "updateForm";
     }
 
-    @PostMapping("/updateForm")
+    @PatchMapping("/updateForm")
     public String update(@ModelAttribute("user") User user) {
         userService.updateUser(user);
         return "redirect:/users";

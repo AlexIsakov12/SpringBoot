@@ -1,10 +1,9 @@
-package service;
+package com.demo.springboot.dao;
 
-import model.User;
+import com.demo.springboot.model.User;
 
 import java.util.List;
-
-public interface UserService {
+public interface UserDao {
     List<User> getUsers();
     User getUserById(long id);
     void saveUser(User user);
